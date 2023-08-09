@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <%- include('partials/head.ejs')%>
+    <link rel="stylesheet" href="main.css">
+    <title><%- title%></title>
+</head>
+<body>
+
+    <style>
+        section{
+            height: fit-content !important;
+        }
+        .info{
+            height: 100%;
+            max-width: 700px;
+            min-width: 400px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: justify;
+            padding: 5%;
+        }
+        .info h2{
+            color: tomato;
+            font-size: 6em;
+            font-weight: bold;
+            width: 100%;
+        }
+        .info p{
+            font-size: 1.2em;
+            padding: .7em .5em;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgb(53, 53, 53);
+        }
+    </style>
+    
+    <main>
+        <%- include('partials/navbar.ejs')%>
+
+        <section>
+            <img src="img_mision.png" alt="img_mision" width="400px">
+            <div class="info">
+                <h2>Misión</h2>
+                <p class="bg-info-subtle text-black">Estamos enfocados en proporcionar soluciones tecnológicas vanguardistas que fomenten el desarrollo y la revolución digital de nuestros clientes. Nuestro compromiso radica en entregar productos y servicios de alto calibre que aborden de manera efectiva y eficiente sus requerimientos.</p>
+            </div>
+        </section>
+        <section>
+            <div class="info">
+                <h2>Vision</h2>
+                <p class="bg-info-subtle text-black">Buscamos ser líderes reconocidos en la industria tecnológica, sobresaliendo por nuestra destacada ejecución de soluciones a medida y nuestra habilidad para adoptar y abrazar las más recientes corrientes tecnológicas. Nuestra meta es forjar vínculos perdurables con nuestros clientes, fundamentados en la confianza y un éxito compartido.</p>
+            </div>
+            <img src="img_vision.png" alt="img_vision" width="350px">
+        </section>
+
+        <%- include('partials/footer.ejs')%>
+
+    </main>
+
+</body>
+<%- include('partials/script.ejs')%>
+</html>

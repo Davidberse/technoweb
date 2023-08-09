@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <%- include('partials/head.ejs')%>
+        <link rel="stylesheet" href="main.css">
+        <title><%- title%></title>
+</head>
+
+<body>
+
+    <style>
+        section{
+            height: fit-content !important;
+            padding-bottom: 3em;
+        }
+        .info {
+            height: 100%;
+            max-width: 700px;
+            min-width: 400px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: justify;
+            padding: 5%;
+        }
+
+        h2 {
+            color: tomato;
+            font-size: 6em;
+            font-weight: bold;
+            width: 100%;
+            text-align: center;
+            margin-bottom: .4em;
+        }
+
+        .info p{
+            font-size: 1.4em;
+            padding: .7em .5em;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgb(53, 53, 53);
+        }
+        section ul{
+            display: flex;
+            flex-wrap: wrap;
+            gap: .7em;
+            justify-content: center;
+        }
+        section ul li{
+            list-style: none;
+            font-size: 1.4em;
+            font-weight: bold;
+            padding: .3em 1.5em;
+            border-radius: 10px;
+            background-color: rgb(35, 35, 35);
+            color: white;
+            box-shadow: 0 0 10px grey;
+        }
+        .sect-02{
+            display: flex;
+            flex-direction: column;
+        }
+    </style>
+
+
+    <main>
+        <%- include('partials/navbar.ejs')%>
+
+            <section>
+                <img src="img_servicios.png" alt="img_mision" width="500px">
+                <div class="info">
+                    <h2>Servicios</h2>
+                    <p class="bg-info-subtle text-black">En <b>InnovateTech Solutions</b>, ofrecemos una amplia gama de servicios tecnológicos diseñados para
+                        satisfacer tus necesidades específicas
+                        Desde el desarrollo de aplicaciones web y móviles hasta el diseño de interfaces de usuario,
+                        estamos preparados para enfrentar cualquier desafío tecnológico. </p>
+                </div>
+            </section>
+
+            <section class="sect-02">
+                <h2>Servicios</h2>
+                <ul>
+                    <li class="bg-info-subtle text-black">Desarrollo de software a medida</li>
+                    <li class="bg-info-subtle text-black">Diseño y desarrollo web</li>
+                    <li class="bg-info-subtle text-black">Desarrollo de aplicaciones móviles</li>
+                    <li class="bg-info-subtle text-black">Consultoría tecnológica</li>
+                    <li class="bg-info-subtle text-black">Integración de sistemas</li>
+                    <li class="bg-info-subtle text-black">Diseño de interfaces de usuario (UI/UX)</li>
+                    <li class="bg-info-subtle text-black">Servicios de análisis de datos</li>
+                    <li class="bg-info-subtle text-black">Seguridad y protección de datos</li>
+                </ul>
+            </section>
+
+            <%- include('partials/footer.ejs')%>
+
+    </main>
+
+</body>
+<%- include('partials/script.ejs')%>
+
+</html>

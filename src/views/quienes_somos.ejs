@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <%- include('partials/head.ejs')%>
+        <link rel="stylesheet" href="main.css">
+        <title><%- title%></title>
+</head>
+
+<body>
+
+    <style>
+        .info {
+            height: 100%;
+            max-width: 700px;
+            min-width: 400px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: justify;
+            padding: 5%;
+        }
+
+        .info h2 {
+            color: tomato;
+            font-size: 4.2em;
+            font-weight: bold;
+            margin-bottom: .4em;
+            width: 100%;
+        }
+
+        .info p{
+            font-size: 1.2em;
+            padding: .7em .5em;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgb(53, 53, 53);
+        }
+
+    </style>
+
+    <main>
+        <%- include('partials/navbar.ejs')%>
+
+            <section>
+                <img src="quienes.png" alt="img_mision" width="450px">
+                <div class="info">
+                    <h2>¿Quienes Somos?</h2>
+                    <p class="bg-info-subtle text-black">Somos <b>InnovateTech Solutions</b>, líderes en soluciones tecnológicas innovadoras. Con un equipo de apasionados expertos, impulsamos el crecimiento y la transformación digital de las empresas mediante soluciones vanguardistas y personalizadas. Estamos aquí para ayudarte a alcanzar tus metas tecnológicas en un mundo digital en constante evolución.</p>
+                </div>
+            </section>
+
+            <%- include('partials/footer.ejs')%>
+
+    </main>
+
+</body>
+<%- include('partials/script.ejs')%>
+
+</html>
