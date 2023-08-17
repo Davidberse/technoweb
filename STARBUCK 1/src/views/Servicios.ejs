@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <%- include('partials/head.ejs')%>
+        <link rel="stylesheet" href="main.css">
+        <title><%- title%></title>
+</head>
+
+<body>
+
+    <style>
+        section{
+            height: fit-content !important;
+            padding-bottom: 3em;
+        }
+        .info {
+            height: 100%;
+            max-width: 700px;
+            min-width: 400px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: justify;
+            padding: 5%;
+        }
+
+        h2 {
+            color: rgb(12, 12, 12);
+            font-size: 6em;
+            font-weight: bold;
+            width: 100%;
+            text-align: center;
+            margin-bottom: .4em;
+        }
+
+        .info p{
+            font-size: 1.4em;
+            padding: .7em .5em;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgb(53, 53, 53);
+        }
+        section ul{
+            display: flex;
+            flex-wrap: wrap;
+            gap: .7em;
+            justify-content: center;
+        }
+        section ul li{
+            list-style: none;
+            font-size: 1.4em;
+            font-weight: bold;
+            padding: .3em 1.5em;
+            border-radius: 10px;
+            background-color: rgb(35, 35, 35);
+            color: white;
+            box-shadow: 0 0 10px rgb(3, 102, 53);
+        }
+        .sect-02{
+            display: flex;
+            flex-direction: column;
+        }
+    </style>
+
+
+    <main>
+        <%- include('partials/navbar.ejs')%>
+
+            <section>
+                <img src="https://djftrby1k8irl.cloudfront.net/s3fs-public/2022-02%2F2022-02-15_11-48-23_1.png?auto=format,compress&q=70&crop=focalpoint&ar=1.8:1.0&w=1400&fit=max&dpr=2" alt="img_mision" width="500px">
+                <div class="info">
+                    <h2>Servicios</h2>
+                    <p class="bg-info-subtle text-black">En <b>Starbucks®</b>, ofrecemos de servicios de bebidas y Alimentos para
+                        satisfacer lo que desea el cliente
+                        En nuestro menú Starbucks encuentras los mejores cafés y tés calientes y helados, los más ricos refreshers, los deliciosos chocolates y 
+                        frappuccinos con café y sin café, los exquisitos paninis, los productos más sabrosos en tortas, panadería y dulcería, además de las bebidas embotelladas de fácil manejo para tus días ocupados, el café en grano para llevar a tu casa y los productos más bonitos en merchandising.</p>
+                </div>
+            </section>
+
+            <section class="sect-02">
+                <h2>Servicios</h2>
+                <ul>
+                    <li class="bg-info-subtle text-black">Bebidas </li>
+                    <li class="bg-info-subtle text-black">Cafe Caliente</li>
+                    <li class="bg-info-subtle text-black">Bebidas Heladas</li>
+                    <li class="bg-info-subtle text-black">Frappuccinos</li>
+                    <li class="bg-info-subtle text-black">Alimentos</li>
+                    <li class="bg-info-subtle text-black">Pasteleria</li>
+                    <li class="bg-info-subtle text-black">Panaderia</li>
+                    <li class="bg-info-subtle text-black">Tortas</li>
+                </ul>
+            </section>
+
+            <%- include('partials/footer.ejs')%>
+
+    </main>
+
+</body>
+<%- include('partials/script.ejs')%>
+
+</html>

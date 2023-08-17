@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <%- include('partials/head.ejs')%>
+        <link rel="stylesheet" href="main.css">
+        <title><%- title%></title>
+</head>
+
+<body>
+
+    <style>
+        .info {
+            height: 100%;
+            max-width: 700px;
+            min-width: 400px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: justify;
+            padding: 5%;
+        }
+
+        .info h2 {
+            color: tomato;
+            font-size: 4.2em;
+            font-weight: bold;
+            margin-bottom: .4em;
+            width: 100%;
+        }
+
+        .info p{
+            font-size: 1.2em;
+            padding: .7em .5em;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgb(53, 53, 53);
+        }
+
+    </style>
+
+    <main>
+        <%- include('partials/navbar.ejs')%>
+
+            <section>
+                <img src="https://djftrby1k8irl.cloudfront.net/s3fs-public/2022-02%2F2022-02-15_11-35-56_1.png?auto=format,compress&q=70&crop=focalpoint&ar=1.8:1.0&w=1400&fit=max&dpr=2 alt="img_mision" width="450px">
+                <div class="info">
+                    <h2>Acerca de</h2>
+                    <p class="bg-info-subtle text-black">Acerca de <b>starbucks</b>, En Starbucks® nos aseguramos de que todo lo que hacemos respete esa conexión, desde nuestro compromiso´por un café de la mejor calidad hasta la forma en que nos relacioonamos con nuestros clientes y comunidades para hacer negocios de manera responsable. Desde los inicios de Starbucks® cuando únicamente teníamos una tienda, en cada lugar en el que hemos estado y en cada lugar que abrimos, hemos tratado de hacerlo un poco mejor de lo que lo encontramos. </p>
+                </div>
+            </section>
+
+            <%- include('partials/footer.ejs')%>
+
+    </main>
+
+</body>
+<%- include('partials/script.ejs')%>
+
+</html>
